@@ -1,0 +1,106 @@
+.flatpickr-calendar {
+    background-color: #000;
+    color: #fff;
+    border: 3px solid #e3000d;
+    border-radius: 10px;
+    max-width: 335px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: None;
+}
+
+.flatpickr-day {
+    color: white; //
+    background: transparent;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.flatpickr-day:hover.flatpickr-day:hover,
+.flatpickr-day.nextMonthDay:hover{
+    background: rgba(227, 0, 13, 0.5);
+    color: white;
+}
+
+/* Выбранный день */
+.flatpickr-day.selected ,.flatpickr-day.selected.nextMonthDay {
+    background: #e3000d;
+    color: white;
+    border-color: #e3000d;
+    border-radius: 50%;
+
+}
+.flatpickr-day.today {
+  border-color: #e3000d;
+}
+
+
+span.flatpickr-weekday {
+  color: white;
+}
+.flatpickr-weekdays {
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    color: #fff;
+    border-bottom: 2px solid #e3000d;
+    padding: 5px 0;
+}
+
+
+.flatpickr-months {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+    color: white;
+    z-index: 5;
+}
+
+.flatpickr-months .flatpickr-month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Khand', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    height: 30px;
+    text-align: center;
+}
+.flatpickr-current-month {
+  font-size: 135%;
+  line-height: inherit;
+  font-weight: 300;
+  color: inherit;
+  position: absolute;
+  width: 100%;
+  left: 3%;
+  height: 65px;
+}
+
+.flatpickr-current-month span.cur-month {
+  font-weight: 500;
+
+}
+
+.flatpickr-day.flatpickr-disabled, .flatpickr-day.flatpickr-disabled:hover {
+  cursor: not-allowed;
+  color: rgb(234, 5, 5);
+}
+.flatpickr-day.nextMonthDay {
+  color: rgba(255, 255, 255, 0.46);
+}
+.flatpickr-months .flatpickr-next-month svg,
+.flatpickr-months .flatpickr-prev-month svg{
+    color: #e3000d;
+    fill: #e3000d;
+    height: 25px;
+    width: 25px;
+}

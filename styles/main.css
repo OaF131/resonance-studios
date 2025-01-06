@@ -1,0 +1,367 @@
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+body, p, li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  }
+
+.logo-tab {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    background: none ;
+    shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.logo-tab img {
+    height: 100px;
+}
+.text-danger {
+    color: #e3000d !important;;
+}
+
+.slide-image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+}
+
+.slide-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
+    z-index: 1; /* Под текстом */
+}
+
+/* Текст */
+.carousel-caption {
+    z-index: 2;
+}
+.carousel-description {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 10px;
+    line-height: 1.5;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+.carousel-description2 {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-top: 10px;
+      line-height: 1.5;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.6);
+}
+
+.vignette {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.5) 100%);
+    pointer-events: none;
+    z-index: 2;
+}
+.custom-background {
+    background: url('../images/background.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.content-section {
+    text-align: left;
+}
+
+.card {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn {
+    font-family: 'Khand', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    padding: 15px 60px;
+    border-radius: 50px;
+    background-color: black;
+    color: red;
+    border: 4px solid red;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: red;
+    color: #fff;
+    border-color:red;
+}
+.btn-primary {
+--bs-btn-color: #fff;
+--bs-btn-bg: #dc3545;
+--bs-btn-border-color: #dc3545;
+--bs-btn-hover-color: #fff;
+--bs-btn-hover-bg: #bb2d3b;
+--bs-btn-hover-border-color: #b02a37;
+--bs-btn-focus-shadow-rgb: 225,83,97;
+--bs-btn-active-color: #fff;
+--bs-btn-active-bg: #b02a37;
+--bs-btn-active-border-color: #a52834;
+--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+--bs-btn-disabled-color: #fff;
+--bs-btn-disabled-bg: #dc3545;
+--bs-btn-disabled-border-color: #dc3545;
+}
+
+
+/* Заголовки */
+h3, h4 {
+    font-family: 'Khand', sans-serif;
+    font-size: 40px;
+    color: #fff;
+}
+
+h1 {
+  font-family: 'Khand', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 90px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+h2
+{
+  font-family: 'Khand', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 60px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+h5{
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0.5, 0, 0, 0);
+
+}
+
+.nav-pills .nav-link {
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 30px;
+
+}
+
+.nav-link:hover {
+    border-radius: 30px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.4);
+
+}
+
+/* Стили для активной кнопки */
+.nav-pills .nav-link.active {
+    color: white;
+    background-color: #e3000d;
+    font-weight: bold; /* Жирный текст */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+}
+/* Кликабельные карточки */
+.option-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.option-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Выбранная карточка */
+.option-card.border-danger {
+    box-shadow: 0px 4px 12px rgba(255, 0, 0, 0.6);
+}
+
+
+.option-card:hover {
+    transform: scale(1.03);
+}
+.option-card,
+.option-card * {
+    cursor: pointer;
+}
+.custom-muted {
+    color: #757575 !important;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+.border-danger {
+    border: 3px solid red !important;
+}
+
+.price {
+    color: #e3000d !important;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.studio-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #d3d3d3;
+    margin-bottom: 1rem;
+}
+
+input {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+input:focus {
+    background-color: #444;
+    border-color: red;
+    color: #fff;
+}
+
+.slide-image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+  .custom-background {
+        background: none;
+      }
+  .second-slide .slide-image {
+        background-position: 10% center;
+    }
+  .logo-tab img {
+      height: 70px;
+    }
+
+    .carousel-item {
+        height: 70vh;
+    }
+    .carousel-caption {
+        bottom: 10%;
+    }
+    .carousel-caption h1 {
+        font-size: 60px;
+    }
+    .carousel-description, .carousel-description2 {
+        font-size
+        flex-direction:
+        text-align: center
+        gap: 10px;
+    }
+    .carousel-caption p {
+       font-size: 1.2rem;
+       min-width: 120%;
+       line-height: 1.4;
+       margin-left: -10%;
+   }
+
+    .cta-btn {
+        font-size: 2rem;
+    }
+    .btn-danger {
+      font-size: 25px;
+    }
+    .nav-pills .nav-link {
+      font-size: 14.5px;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-4, .col-md-6 {
+    width: 90%;
+    max-width: 350px;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+    .card-title {
+        font-size: 2rem; /
+    }
+
+    .studio-description {
+        font-size: 0.85rem;
+    }
+
+    .equipment-list {
+        font-size: 0.8rem;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+}
+
+/* Поля формы */
+.form-control, .form-select {
+    border: 1px solid #000;
+    border-left: none;
+}
+
+
+.custom-time-dropdown option {
+    background-color: #000;
+    color: #fff;
+}
+
+.custom-time-dropdown {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.custom-time-dropdown option:hover {
+    background-color: #e3000d;
+    color: #fff;
+}
+.input-group-text i {
+    color: #fff;
+    font-size: 1.45rem;
+}
+.custom-time-dropdown option[disabled] {
+    color: #e3000d;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+}
