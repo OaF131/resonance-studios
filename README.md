@@ -3,8 +3,9 @@
 
 This project involved creating a responsive and visually engaging landing page for Resonance Studios, a music studio providing rehearsal rooms, recording services, and equipment rental!
 
-![laptops](laptops.png)
 ---
+
+![laptops](laptops.png)
 
 ## Features
 
@@ -42,11 +43,11 @@ The design process for the landing page included the following steps:
 ├── index.html          # Main landing page
 ├── styles/
 │   ├── style.css       # Custom styles
-│   ├──flatpickr-custom.css # Custom calendar
+│   ├── flatpickr-custom.css # Custom calendar
 ├── scripts/
 │   ├── script.js       # Custom scripts
 ├── images/ 
-│   ├── landing-screenshot.png  # Graphics
+│   ├── background.jpg  # Graphics
  
 ```
 
@@ -54,10 +55,7 @@ The design process for the landing page included the following steps:
 
 ## Live Preview
 
-Check out the full presentation on Behance:  
-[Behance Presentation](https://www.behance.net/gallery/216367791/Resonance-Studios-Landing-Page)
-
----
+Check out the full presentation on Behance:  [Resonance Studios Landing Page](https://www.behance.net/gallery/216367791/Resonance-Studios-Landing-Page)
 
 ## Contact
 
