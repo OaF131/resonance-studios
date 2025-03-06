@@ -54,7 +54,7 @@ The design process for the landing page included the following steps:
 
 ---
 
-## full presentation on Behance
+## Full Presentation on Behance
 
 Check out the full presentation on Behance:  [Resonance Studios Landing Page](https://www.behance.net/gallery/216367791/Resonance-Studios-Landing-Page)
 
