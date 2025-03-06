@@ -1,4 +1,5 @@
 # Resonance Studios landing Page
+### https://oaf131.github.io/resonance-studios
 ### UI/UX • Web Design • Front-End Development 
 
 This project involved creating a responsive and visually engaging landing page for Resonance Studios, a music studio providing rehearsal rooms, recording services, and equipment rental!
